@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.svg-icon-spacing {
+    width: 150px; /* Adjust as needed for desired size */
+    height: 150px; /* Adjust as needed for desired size */
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 0; /* Remove additional margin between icons */
+    padding: 20px; /* Adjust padding to control space around icons */
+    display: inline-block; /* To align SVGs inline */
+}
+
+
+.svg-icon-spacing:active {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.svg-icon-spacing:hover {
+    transform: scale(1.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .svg-icon-spacing {
+        width: 120px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .svg-icon-spacing {
+        width: 100px;
+        height: 35px;
+        margin: 5px;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .svg-icon-spacing {
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 350px) {
+    .svg-icon-spacing {
+        width: 70px;
+        height: 25px;
+        margin: 2px;
+        padding: 1px;
+        object-fit: contain;
+    }
+}
+
+.dark .svg-icon-spacing {
+    filter: brightness(0.8) invert(0.9);
+}
+
+/* Header CSS */
+.header {
+    background-color: #001f90; /* Deep blue */
+    color: #FFFFFF; /* White text */
+    padding: 15px 30px; /* Adjust padding as necessary */
+}
+
+/* Header Links */
+.header a {
+    color: #FFFFFF; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+}
+
+.header a:hover {
+    color: #ff7f50; /* Optional hover color, like coral */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #001f90; /* Deep blue to match header */
+    color: #FFFFFF; /* White text */
+    text-align: center; /* Center the content */
+    padding: 100px 20px; /* Padding for top and bottom */
+}
+
+/* Hero Text (to make it look prominent) */
+.hero h1 {
+    font-size: 3rem; /* Adjust as needed */
+    font-weight: bold; /* Bold to make it stand out */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Adjust as needed */
+    margin-bottom: 40px;
+}
+
+.custom-divider {
+    border: 0;
+    height: 1px;
+
+    border-bottom: 4px solid #f97314;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+}
