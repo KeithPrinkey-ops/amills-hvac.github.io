@@ -11,7 +11,8 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.0",
-        "spatie/laravel-flare": "^1.0"
+        "spatie/laravel-flare": "^1.0",
+        "ext-pdo": "*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.14",
